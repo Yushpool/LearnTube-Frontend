@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = `${import.meta.env.VITE_API_URL}/api`;
+const API = `${import.meta.env.VITE_API_URL.replace(/\/$/, "")}/api`;
 
 
 export const updateProgress = async (
